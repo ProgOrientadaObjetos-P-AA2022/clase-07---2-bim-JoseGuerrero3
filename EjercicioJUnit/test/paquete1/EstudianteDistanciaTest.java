@@ -1,4 +1,4 @@
-/*
+   /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -47,6 +47,7 @@ public class EstudianteDistanciaTest {
             NoSuchFieldException, 
             IllegalAccessException{
         System.out.println("establecerNumeroAsginaturas");
+        EstudianteDistancia instance = new EstudianteDistancia();
         int numero = 10;
         instance.establecerNumeroAsginaturas(numero);
         Field field = instance.getClass().getDeclaredField("numeroAsignaturas");
@@ -62,6 +63,7 @@ public class EstudianteDistanciaTest {
             NoSuchFieldException, 
             IllegalAccessException {
         System.out.println("establecerCostoAsignatura");
+        EstudianteDistancia instance = new EstudianteDistancia();
         double valor = 1.0;
         instance.establecerCostoAsignatura(valor);
         Field field = instance.getClass().getDeclaredField("costoAsignatura");
@@ -76,6 +78,7 @@ public class EstudianteDistanciaTest {
             NoSuchFieldException, 
             IllegalAccessException {
         System.out.println("calcularMatriculaDistancia");
+        EstudianteDistancia instance = new EstudianteDistancia();
         instance.establecerCostoAsignatura(1.0);
         instance.establecerNumeroAsginaturas(10);
         instance.calcularMatriculaDistancia();
@@ -88,6 +91,7 @@ public class EstudianteDistanciaTest {
     @Test
     public void testObtenerNumeroAsignaturas() {
         System.out.println("obtenerNumeroAsignaturas");
+        EstudianteDistancia instance = new EstudianteDistancia();
         int expResult = 10;
         instance.establecerNumeroAsginaturas(10);
         int result = instance.obtenerNumeroAsignaturas();
@@ -100,6 +104,7 @@ public class EstudianteDistanciaTest {
     @Test
     public void testObtenerCostoAsignatura() {
         System.out.println("obtenerCostoAsignatura");
+        EstudianteDistancia instance = new EstudianteDistancia();
         double expResult = 2.0;
         instance.establecerCostoAsignatura(2.0);
         double result = instance.obtenerCostoAsignatura();
@@ -114,6 +119,7 @@ public class EstudianteDistanciaTest {
     @Test
     public void testObtenerMatriculaDistancia() {
         System.out.println("obtenerMatriculaDistancia");
+        EstudianteDistancia instance = new EstudianteDistancia();
         instance.establecerCostoAsignatura(1.0);
         instance.establecerNumeroAsginaturas(10);
         instance.calcularMatriculaDistancia();
